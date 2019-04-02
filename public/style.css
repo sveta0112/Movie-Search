@@ -1,0 +1,20 @@
+.title {
+    background-color: #99A1A6;
+    display: block;
+    padding-left: 20px;
+}
+
+.search {
+    display: block;
+    width: 40%;
+    padding: 15px 8px 8px;
+}
+
+.dblist {
+    width: 300px;
+}
+
+.content{
+   display: grid;
+   grid-template-columns: 1fr 2fr
+}
