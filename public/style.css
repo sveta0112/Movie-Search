@@ -10,11 +10,22 @@
     padding: 15px 8px 8px;
 }
 
-.dblist {
-    width: 300px;
-}
-
 .content{
    display: grid;
    grid-template-columns: 1fr 2fr
 }
+.card{
+   width: 18rem;
+}
+.container {
+    margin-top: 20px;
+}
+
+#header {
+    background: url("wall.jpeg");
+    /* background: url("imgs/header.jpeg") center center / cover no-repeat; */
+}
+
+/* .dblist {
+    width: 300px;
+} */

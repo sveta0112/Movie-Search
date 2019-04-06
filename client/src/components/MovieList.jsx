@@ -23,41 +23,52 @@ class MovieList extends Component {
               console.log(error)
           })
     }
-
+    
+    
     render(){
         const { view } = this.props;
         if(view === "default"){
             return(
-                <div className="content">
-                    <div>
-                       <img src={this.props.movie.poster_path} className="dblist" alt="poster of movie"/>
+                <section id="gallery">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-4 mb-4">
+                                <div className="card">
+                                    <img src={this.props.movie.poster_path} className=" card-img-top " alt="poster of movie"/>
+                                    <div className="card-body">
+                                        <h5 className="card-title">{this.props.movie.title}</h5>
+                                        <p className="card-text">{this.props.movie.overview}</p>
+                                        <input type="button" className="btn btn-primary" value="Add to my list" onClick={this.handleAdding}/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <h2>{this.props.movie.title}</h2>
-                        <p>{this.props.movie.overview}</p>
-                        <input type="button" value="Add to my list" onClick={this.handleAdding}/>
-                    </div>
-                </div>
+                </section>
             );
         } else if(view === 'myList'){
             return(
-                <div className="content">
-                    <div>
-                       <img src={this.props.movie.poster_path} alt="poster of movie"/>
+                <section id="gallery"> 
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-4 mb-4">
+                                <div className="card">
+                                    <img src={this.props.movie.poster_path}  className="card-img-top" alt="poster of movie"/>
+                                    <div className="card-body">
+                                    <h5 className="card-title">{this.props.movie.title}</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                       <h2>{this.props.movie.title}</h2>
-                      
-                    </div>
-                </div>
+                </section>
             );
-
         }
-       return(
-           <div>
-               { view }
-           </div>
-       );
+        return(
+            <div>
+                { view }
+            </div>
+        );
     }
 }
 

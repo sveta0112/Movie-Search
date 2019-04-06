@@ -66,15 +66,18 @@ class App extends Component {
       return(
         <div>
           <Navbar handleView={this.changeView}/>
-          <div className="center">
-             <p>Welcome to Movie Search!
-               Please use below window to find your favorite movie from The Movie DB
-             </p>
+          <div className="container">
+              <section id="header" className="jumbotron text-center">
+                  <p className="lead">Welcome to Movie Search!
+                    Please use below window to find your favorite movie from The Movie DB
+                  </p>
+                  <label htmlFor="title"></label>
+                  <input type="text"  id="title" className="search" onChange={this.handleChange} placeholder="Search..."/>
+              </section>
+              <section className="jumbotron">
+                 {this.state.list}
+              </section>
           </div>
-          <label htmlFor="title"></label>
-          <input type="text" id="title" className="search" onChange={this.handleChange}/>
-      
-          {this.state.list}
         </div>
       );
 
@@ -82,7 +85,11 @@ class App extends Component {
       return(
         <div>
           <Navbar handleView={this.changeView}/>
-          <YourList view={this.state.view}/>
+          <div className="container">
+            <section className="jumbotron">
+              <YourList view={this.state.view}/>
+            </section>
+          </div>
         </div>
       );
     }
