@@ -32,7 +32,7 @@ class MovieList extends Component {
                 <section id="gallery">
                     <div className="container">
                         <div className="row">
-                            <div className="col-lg-4 mb-4">
+                            <div className="col-lg-4 mb-4 left" >
                                 <div className="card">
                                     <img src={this.props.movie.poster_path} className=" card-img-top " alt="poster of movie"/>
                                     <div className="card-body">

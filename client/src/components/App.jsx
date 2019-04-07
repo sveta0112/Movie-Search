@@ -74,9 +74,9 @@ class App extends Component {
                   <label htmlFor="title"></label>
                   <input type="text"  id="title" className="search" onChange={this.handleChange} placeholder="Search..."/>
               </section>
-              <section className="jumbotron">
+              
                  {this.state.list}
-              </section>
+              
           </div>
         </div>
       );
@@ -86,9 +86,9 @@ class App extends Component {
         <div>
           <Navbar handleView={this.changeView}/>
           <div className="container">
-            <section className="jumbotron">
+            
               <YourList view={this.state.view}/>
-            </section>
+            
           </div>
         </div>
       );
