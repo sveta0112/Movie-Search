@@ -1,4 +1,7 @@
-.title {
+h1 {
+    text-align: center;
+}
+title {
     background-color: #99A1A6;
     display: block;
     padding-left: 20px;
@@ -26,10 +29,10 @@
     background: url("wall.jpeg");
     /* background: url("imgs/header.jpeg") center center / cover no-repeat; */
 }
-.row {
+/* .row {
     margin: 0 15px;
     float: left;
-}
+} */
 
 /* .dblist {
     width: 300px;

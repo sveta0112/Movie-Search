@@ -68,11 +68,12 @@ class App extends Component {
           <Navbar handleView={this.changeView}/>
           <div className="container">
               <section id="header" className="jumbotron text-center">
-                  <p className="lead">Welcome to Movie Search!
-                    Please use below window to find your favorite movie from The Movie DB
-                  </p>
-                  <label htmlFor="title"></label>
-                  <input type="text"  id="title" className="search" onChange={this.handleChange} placeholder="Search..."/>
+                  <h1 className="lead">Welcome to Movie Search!</h1>
+                  <p>Please use below window to find your favorite movie from The Movie DB</p>
+                  <div className="container">
+                    <label htmlFor="title"></label>
+                    <input type="text"  id="title" className="search" onChange={this.handleChange} placeholder="Search..."/>
+                  </div>
               </section>
               
                  {this.state.list}

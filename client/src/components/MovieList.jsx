@@ -31,10 +31,12 @@ class MovieList extends Component {
             return(
                 <section id="gallery">
                     <div className="container">
-                        <div className="row">
-                            <div className="col-lg-4 mb-4 left" >
+                        <div className="row text-center" >
+                            <div className="col-md-3 col-sm-6 left" >
                                 <div className="card">
-                                    <img src={this.props.movie.poster_path} className=" card-img-top " alt="poster of movie"/>
+                                    <div className="thumbnail">
+                                       <img src={this.props.movie.poster_path} className=" card-img-top " alt="poster of movie"/>
+                                    </div>
                                     <div className="card-body">
                                         <h5 className="card-title">{this.props.movie.title}</h5>
                                         <p className="card-text">{this.props.movie.overview}</p>
@@ -50,10 +52,12 @@ class MovieList extends Component {
             return(
                 <section id="gallery"> 
                     <div className="container">
-                        <div className="row">
+                        <div className="row text-center">
                             <div className="col-lg-4 mb-4">
                                 <div className="card">
-                                    <img src={this.props.movie.poster_path}  className="card-img-top" alt="poster of movie"/>
+                                    <div className="thumbnail">
+                                       <img src={this.props.movie.poster_path}  className="card-img-top" alt="poster of movie"/>
+                                    </div>
                                     <div className="card-body">
                                     <h5 className="card-title">{this.props.movie.title}</h5>
                                     </div>
