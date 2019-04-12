@@ -1,10 +1,21 @@
 import React from 'react';
 
-
-
 const Navbar = ({handleView}) => {
     return(
-        <nav className="navbar navbar-default">
+        <div className="ui fixed inverted menu">
+            <div className="ui container">
+                <div className="header item"><i className="fa fa-video"></i>&nbsp;&nbsp;&nbsp;Movie Search</div>
+                <a className="item" onClick={() => handleView("default")}>Home</a>
+                <a className="item" onClick={() => handleView("myList")}>Your List</a>
+            </div>
+        </div>
+    );
+}
+
+export default Navbar;
+
+
+{/* <nav className="navbar navbar-default">
             <div className="container-fluid">
                 <div className="navbar-header">
                     <a className="navbar-brand" href="#"><i className="fas fa-video"></i>  Movie Search</a>
@@ -20,12 +31,7 @@ const Navbar = ({handleView}) => {
                     </ul>
                 </div>
               </div>
-        </nav>
-    );
-}
-
-export default Navbar;
-
+        </nav> */}
 
 {/* <div>
             <table className="title">

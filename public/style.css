@@ -21,9 +21,10 @@ title {
    width: 18rem;
    
 }
-.container {
+
+/* .container {
     margin-top: 20px;
-}
+} */
 
 #header {
     background: url("wall.jpeg");
@@ -37,3 +38,22 @@ title {
 /* .dblist {
     width: 300px;
 } */
+
+i.icon {
+    font-size: 2em;
+}
+
+.container.main{
+    margin-top: 7.0em;
+}
+.container.main.segment {
+    margin-top: 7.0em;
+}
+
+.search {
+   margin: auto;
+}
+
+.fa.fa-video {
+    font-size: 2em;
+}
