@@ -1,4 +1,4 @@
-const Movie = require('../../database//models/movie_list.js');
+const Movie = require('../../database/models/movie_list.js');
 
 exports.getAll = (req, res) => {
     Movie.find({}, (err, result) => {
