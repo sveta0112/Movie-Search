@@ -88,7 +88,7 @@ class App extends Component {
           <div className="ui main text container">
            
             <div className="ui one column stackable center aligned page grid">
-               <div className="column">
+               <div className="container">
                   <div className="ui icon header">
                     Welcome to Movie Search!
                   </div>

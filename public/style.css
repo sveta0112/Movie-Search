@@ -1,3 +1,6 @@
+body {
+    background-color: lightgrey;
+}
 h1 {
     text-align: center;
 }
@@ -48,6 +51,7 @@ i.icon {
 }
 .container.main.segment {
     margin-top: 7.0em;
+    
 }
 
 .search {
@@ -57,3 +61,8 @@ i.icon {
 .fa.fa-video {
     font-size: 2em;
 }
+
+
+
+
+

@@ -26,6 +26,6 @@ const mongoose = require('mongoose');
 const mongoUri = process.env.MONGODB_URI || 'mongodb://lana0112:lana1234@ds115762.mlab.com:15762/movies'
 
 
-const db = mongoose.connect(mongoUri);
+const db = mongoose.connect(mongoUri,{ useNewUrlParser: true } );
 
 module.exports = db;

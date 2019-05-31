@@ -39,8 +39,8 @@ class MovieList extends Component {
             );
         } else if(view === 'myList'){
             return(
-               <div className="ui main text container segment">
-                   <div className="ui huge heder">
+                <div className="ui main text container segment">
+                   <div className="ui huge header">
                        <h5>{this.props.movie.title}</h5>
                    </div>
                    <div className="ui top attached segment">
@@ -54,6 +54,7 @@ class MovieList extends Component {
                       </div>
                    </div>
                </div>
+               
             );
         }
         return(
@@ -101,4 +102,22 @@ export default MovieList;
                         </div>
                     </div>
                 </section> */}
+
+
+
+{/* <div className="ui main text container segment">
+                   <div className="ui huge header">
+                       <h5>{this.props.movie.title}</h5>
+                   </div>
+                   <div className="ui top attached segment">
+                      <div className="ui divided items">
+                          <div className="item">
+                              <div className="image">
+                                 <img src={this.props.movie.poster_path}  className="card-img-top" alt="poster of movie"/>
+                              </div>
+                              
+                          </div>
+                      </div>
+                   </div>
+               </div> */}
  
