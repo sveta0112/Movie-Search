@@ -37,9 +37,5 @@ From within the root directory:
 npm install -g webpack
 npm install
 
-## Running Tests
-- npm test to run jest unit test suite for all components 
 
-## Acknowledgements
-- Thanks to everyone on the JISHAX team for builing awesome modules that bring to life the Drop Table verison of the Open table restaurant page user experience! 
 
